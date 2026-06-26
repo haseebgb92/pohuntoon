@@ -1,0 +1,173 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #1e4e9a;
+  --secondary: #29b7e5;
+  --purple: #6e4bd8;
+  --orange: #f5a623;
+  --green: #2cbf6d;
+  --background: #f8f9fc;
+  --surface: #ffffff;
+  --surface-strong: #eef2f7;
+  --border: #e7eaf0;
+  --muted: #eef2f7;
+  --success: #2cbf6d;
+  --warning: #f5a623;
+  --error: #e06b75;
+  --text-primary: #172b4d;
+  --text-secondary: #6b7280;
+  --foreground: var(--text-primary);
+  --muted-foreground: var(--text-secondary);
+  --input: var(--surface);
+  --ring: var(--secondary);
+  --primary-foreground: #ffffff;
+  --secondary-foreground: #172b4d;
+  --accent: var(--orange);
+  --accent-foreground: #172b4d;
+  --destructive: var(--error);
+  --destructive-foreground: #ffffff;
+  --success-foreground: #ffffff;
+  --warning-foreground: #172b4d;
+  --card: var(--surface);
+  --card-foreground: var(--text-primary);
+  --radius: 1rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-strong: var(--surface-strong);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --radius-sm: calc(var(--radius) - 0.25rem);
+  --radius-md: calc(var(--radius) - 0.125rem);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 0.25rem);
+}
+
+* {
+  border-color: var(--border);
+}
+
+body {
+  min-height: 100dvh;
+  background: var(--background);
+  color: var(--text-primary);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  padding-right: env(safe-area-inset-right);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--secondary) 24%, white);
+}
+
+.skip-link {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  z-index: 9999;
+  transform: translateY(-150%);
+  border-radius: 999px;
+  background: var(--purple);
+  color: white;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  transition: transform 160ms ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--secondary) 70%, white);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.shell-grid {
+  display: grid;
+  min-height: 100dvh;
+  grid-template-columns: 17rem minmax(0, 1fr);
+}
+
+.shell-mobile-only {
+  display: block;
+}
+
+.shell-desktop-only {
+  display: none;
+}
+
+.shell-desktop-sidebar {
+  display: none;
+}
+
+.shell-mobile-safe-bottom {
+  padding-bottom: calc(5.5rem + env(safe-area-inset-bottom));
+}
+
+@media (width < 960px) {
+  .shell-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (width >= 960px) {
+  .shell-mobile-only {
+    display: none;
+  }
+
+  .shell-desktop-only {
+    display: block;
+  }
+
+  .shell-desktop-sidebar {
+    display: flex;
+    min-height: 100dvh;
+    flex-direction: column;
+  }
+
+  .shell-mobile-safe-bottom {
+    padding-bottom: 0;
+  }
+}

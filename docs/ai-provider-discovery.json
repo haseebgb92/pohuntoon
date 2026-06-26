@@ -1,0 +1,722 @@
+{
+  "provider": "ollama",
+  "endpoint": "https://ollama.com/api/tags",
+  "ok": true,
+  "status": 200,
+  "modelCount": 35,
+  "capabilities": [
+    "chat",
+    "streaming"
+  ],
+  "defaults": {
+    "reasoning": "deepseek-v3.2",
+    "fast-chat": "nemotron-3-super",
+    "coding": "deepseek-v3.2"
+  },
+  "models": [
+    {
+      "id": "nemotron-3-super",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "fast-chat"
+      ],
+      "modifiedAt": "2026-03-11T00:00:00Z",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "nemotron-3-ultra",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "fast-chat"
+      ],
+      "modifiedAt": "2026-06-04T00:00:00Z",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "deepseek-v3.2",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "reasoning",
+        "coding"
+      ],
+      "modifiedAt": "2025-12-02T00:00:00Z",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "gpt-oss:120b",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "fast-chat"
+      ],
+      "modifiedAt": "2025-08-05T00:00:00Z",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "gpt-oss:20b",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "fast-chat"
+      ],
+      "modifiedAt": "2025-08-05T00:00:00Z",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "minimax-m2.5",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "fast-chat"
+      ],
+      "modifiedAt": "2026-02-12T00:00:00Z",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "ministral-3:14b",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "fast-chat"
+      ],
+      "modifiedAt": "2025-12-02T00:00:00Z",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "mistral-large-3:675b",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "fast-chat"
+      ],
+      "modifiedAt": "2025-12-02T00:00:00Z",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "devstral-small-2:24b",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "fast-chat"
+      ],
+      "modifiedAt": "2025-12-09T00:00:00Z",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "kimi-k2.7-code",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "coding"
+      ],
+      "modifiedAt": "2026-06-12T00:00:00Z",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "rnj-1:8b",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "fast-chat"
+      ],
+      "modifiedAt": "2025-12-09T00:00:00Z",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "nemotron-3-nano:30b",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "fast-chat"
+      ],
+      "modifiedAt": "2025-12-15T00:00:00Z",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "minimax-m3",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "fast-chat"
+      ],
+      "modifiedAt": "2026-06-01T00:00:00Z",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "gemma3:4b",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "fast-chat"
+      ],
+      "modifiedAt": "2025-03-12T00:00:00Z",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "gemma3:12b",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "fast-chat"
+      ],
+      "modifiedAt": "2025-03-12T00:00:00Z",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "qwen3-coder:480b",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "coding"
+      ],
+      "modifiedAt": "2025-07-22T00:00:00Z",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "deepseek-v4-flash",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "reasoning",
+        "coding"
+      ],
+      "modifiedAt": "2026-04-24T00:00:00Z",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "deepseek-v3.1:671b",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "reasoning",
+        "coding"
+      ],
+      "modifiedAt": "2025-11-20T00:00:00Z",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "ministral-3:3b",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "fast-chat"
+      ],
+      "modifiedAt": "2025-12-02T00:00:00Z",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "devstral-2:123b",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "fast-chat"
+      ],
+      "modifiedAt": "2025-12-08T00:00:00Z",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "gemma3:27b",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "fast-chat"
+      ],
+      "modifiedAt": "2025-03-12T00:00:00Z",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "gemma4:31b",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "fast-chat"
+      ],
+      "modifiedAt": "2026-04-02T09:00:00-08:00",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "glm-4.7",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "fast-chat"
+      ],
+      "modifiedAt": "2025-12-22T00:00:00Z",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "glm-5.2",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "fast-chat"
+      ],
+      "modifiedAt": "2026-06-16T08:00:00-07:00",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "kimi-k2.6",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "fast-chat"
+      ],
+      "modifiedAt": "2026-03-31T00:00:00Z",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "qwen3.5:397b",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "coding"
+      ],
+      "modifiedAt": "2026-02-16T00:00:00Z",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "glm-5",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "fast-chat"
+      ],
+      "modifiedAt": "2026-02-11T00:00:00Z",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "qwen3-coder-next",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "coding"
+      ],
+      "modifiedAt": "2025-02-04T00:00:00Z",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "deepseek-v4-pro",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "reasoning",
+        "coding"
+      ],
+      "modifiedAt": "2026-04-24T00:00:00Z",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "minimax-m2.7",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "fast-chat"
+      ],
+      "modifiedAt": "2026-03-18T00:00:00Z",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "gemini-3-flash-preview",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "fast-chat"
+      ],
+      "modifiedAt": "2025-12-17T00:00:00Z",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "glm-5.1",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "fast-chat"
+      ],
+      "modifiedAt": "2026-04-07T08:00:00-07:00",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "minimax-m2.1",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "fast-chat"
+      ],
+      "modifiedAt": "2025-12-20T00:00:00Z",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "ministral-3:8b",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "fast-chat"
+      ],
+      "modifiedAt": "2025-12-02T00:00:00Z",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    },
+    {
+      "id": "kimi-k2.5",
+      "provider": "ollama",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "roles": [
+        "fast-chat"
+      ],
+      "modifiedAt": "2026-01-26T00:00:00Z",
+      "details": {
+        "parent_model": "",
+        "format": "",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": ""
+      }
+    }
+  ]
+}

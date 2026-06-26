@@ -1,0 +1,74 @@
+ ⨯ ./components/layout/topbar.tsx:6:1
+Module not found: Can't resolve '@/app/actions/logout'
+  4 | import type { AuthenticatedAppUser } from "@/lib/auth/get-current-user";
+  5 | import { roleLabels } from "@/lib/auth/roles";
+> 6 | import { logout } from "@/app/actions/logout";
+    | ^
+  7 |
+  8 | type TopbarProps = {
+  9 |   user: AuthenticatedAppUser;
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./components/layout/app-shell.tsx
+./app/(partner)/layout.tsx
+ ⨯ ./components/layout/topbar.tsx:6:1
+Module not found: Can't resolve '@/app/actions/logout'
+  4 | import type { AuthenticatedAppUser } from "@/lib/auth/get-current-user";
+  5 | import { roleLabels } from "@/lib/auth/roles";
+> 6 | import { logout } from "@/app/actions/logout";
+    | ^
+  7 |
+  8 | type TopbarProps = {
+  9 |   user: AuthenticatedAppUser;
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./components/layout/app-shell.tsx
+./app/(partner)/layout.tsx
+ ⨯ ./components/layout/app-shell.tsx:3:1
+Module not found: Can't resolve '@/components/layout/desktop-shell'
+  1 | import type { ReactNode } from "react";
+  2 |
+> 3 | import { DesktopShell } from "@/components/layout/desktop-shell";
+    | ^
+  4 | import { MobileShell } from "@/components/layout/mobile-shell";
+  5 | import type { AuthenticatedAppUser } from "@/lib/auth/get-current-user";
+  6 | import type { NavigationItem } from "@/lib/config/navigation";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/(partner)/layout.tsx
+<w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (102kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+<w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (250kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+ ⨯ Error: ENOENT: no such file or directory, open 'D:\Orbis\.next\server\vendor-chunks\next@15.5.3_@babel+core@7.2_39482d205e9825df3dc4d468ffd93fba.js'
+    at <unknown> (D:\Orbis\.next\server\app\page.js:324:47)
+    at Object.<anonymous> (D:\Orbis\.next\server\app\page.js:327:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\Orbis\\.next\\server\\vendor-chunks\\next@15.5.3_@babel+core@7.2_39482d205e9825df3dc4d468ffd93fba.js',
+  page: '/'
+}
+ ⨯ Error: Cannot find module './vendor-chunks/@supabase+auth-js@2.108.2.js'
+Require stack:
+- D:\Orbis\.next\server\webpack-runtime.js
+- D:\Orbis\.next\server\app\(partner)\app\dashboard\page.js
+- D:\Orbis\node_modules\.pnpm\next@15.5.3_@babel+core@7.2_39482d205e9825df3dc4d468ffd93fba\node_modules\next\dist\server\require.js
+- D:\Orbis\node_modules\.pnpm\next@15.5.3_@babel+core@7.2_39482d205e9825df3dc4d468ffd93fba\node_modules\next\dist\server\load-components.js
+- D:\Orbis\node_modules\.pnpm\next@15.5.3_@babel+core@7.2_39482d205e9825df3dc4d468ffd93fba\node_modules\next\dist\build\utils.js
+- D:\Orbis\node_modules\.pnpm\next@15.5.3_@babel+core@7.2_39482d205e9825df3dc4d468ffd93fba\node_modules\next\dist\build\swc\options.js
+- D:\Orbis\node_modules\.pnpm\next@15.5.3_@babel+core@7.2_39482d205e9825df3dc4d468ffd93fba\node_modules\next\dist\build\swc\index.js
+- D:\Orbis\node_modules\.pnpm\next@15.5.3_@babel+core@7.2_39482d205e9825df3dc4d468ffd93fba\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- D:\Orbis\node_modules\.pnpm\next@15.5.3_@babel+core@7.2_39482d205e9825df3dc4d468ffd93fba\node_modules\next\dist\server\config.js
+- D:\Orbis\node_modules\.pnpm\next@15.5.3_@babel+core@7.2_39482d205e9825df3dc4d468ffd93fba\node_modules\next\dist\server\next.js
+- D:\Orbis\node_modules\.pnpm\next@15.5.3_@babel+core@7.2_39482d205e9825df3dc4d468ffd93fba\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (D:\Orbis\.next\server\app\(partner)\app\dashboard\page.js:685:47)
+    at Object.<anonymous> (D:\Orbis\.next\server\app\(partner)\app\dashboard\page.js:688:3) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/app/dashboard'
+}
